@@ -2,12 +2,15 @@
     background-image: url(img/bg.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
-    gap: 30px;
-    padding: 10px 120px 10px 120px;
+    column-gap: 5px;
+    row-gap: 30px;
+    padding: 10px 5px 10px 5px;
 }
 .hearts, .diamonds{
     color: red;
@@ -307,20 +310,125 @@
         width:100px;
         height: 150px;
         display: grid;
+        gap:15px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        top: 30px;
+        top: 10px;
         left: 30px;
-        div{
-            margin-top: 10px;
-            margin-bottom: 10px;
-            width: fit-content;
-        }
     }
     .plus-center{
         position: absolute;
         font-size: 30px;
-        top: 50px;
+        top: 80px;
         left:60px;
     }   
+}
+.ten{
+    position: relative;
+    &__1{
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 2px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+
+    }
+    &__2{
+        font-size: 20px;
+        text-align: left;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-bottom: 85px;
+        padding-bottom: 0;
+    }
+    &__4{
+        font-size: 20px;
+        text-align: left;
+        transform: rotate(180deg);
+        padding-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding-bottom: 0;
+    }
+    &__5{
+        font-size: 20px;
+        text-align: left;
+        transform: rotate(180deg);
+        padding-left: 8px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    &__center{
+        font-size: 30px;
+        position: absolute;
+        width:100px;
+        height: 150px;
+        display: grid;
+        gap:15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        top: 10px;
+        left: 30px;
+    }
+    .plus-center{
+        position: absolute;
+        font-size: 30px;
+        top: 30px;
+        left:60px;
+    }   
+    .plus-center-2{
+        position: absolute;
+        font-size: 30px;
+        top: 130px;
+        left:60px;
+    } 
+}
+.img{
+    position: relative;
+    &__1{
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 2px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+
+    }
+    &__2{
+        font-size: 20px;
+        text-align: left;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-bottom: 85px;
+        padding-bottom: 0;
+    }
+    &__4{
+        font-size: 20px;
+        text-align: left;
+        transform: rotate(180deg);
+        padding-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding-bottom: 0;
+    }
+    &__5{
+        font-size: 20px;
+        text-align: left;
+        transform: rotate(180deg);
+        padding-left: 8px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    &__center{
+        position: absolute;
+        width:80px;
+        height: 120px;
+        top: 30px;
+        left: 30px;
+        img{
+            width:80px;
+        height: 140px;
+        }
+    }
 }
